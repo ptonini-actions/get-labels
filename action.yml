@@ -1,0 +1,17 @@
+name: get-labels
+description: ''
+inputs:
+  labels:
+    description: ''
+    required: true
+  separator:
+    description: ''
+    required: false
+    default: ':'
+  github_token:
+    description: ''
+    required: false
+    default: ${{ github.token }}
+runs:
+  using: node16
+  main: dist/index.js
